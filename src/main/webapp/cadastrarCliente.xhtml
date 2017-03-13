@@ -1,0 +1,71 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html" 
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml"
+                xmlns:f="http://java.sun.com/jsf/core">
+
+    
+    <ui:define name="corpo"> 
+		
+	           
+    <title>Cadastrar Cliente</title>  
+      <h:form>
+
+<h2>Cliente</h2>
+     <p:tabView>
+        <p:tab title="Cadastrar Cliente">
+        <p:separator/>
+             <h:panelGrid columns="4" cellpadding="10">
+	                <p:outputLabel value="Nome:"/>
+	                <p:inputText value="" size="55" placeholder="Ex: Steve Jobs" />
+	                <p:outputLabel value="Email:"/>
+	                <p:inputText value="" size="55" placeholder="Ex: email@dominio.com.br"/>
+	                <p:outputLabel value="Telefone:"/>
+	                <p:inputMask mask="(99)9999-9999" placeholder="Ex: (21) 2616-0000 " size="55"/>
+	                <p:outputLabel value="Celular:"/>
+	                <p:inputMask mask="(99)9.9999-9999" placeholder="Ex: (21) 9.8781-0000" size="55"/>
+	                <p:outputLabel value="Data Nasc.:"/>
+	                <p:inputMask mask="99/99/9999" size="55" placeholder="Ex: 01/01/2000"/>
+	                <p:outputLabel value="Como nos conheceu?"/>
+	                	<p:selectOneMenu filter="true">
+	                		<f:selectItem itemValue="" itemLabel="Selecione uma mídia"/>
+	                		<f:selectItem itemValue="" itemLabel="Indicação de amigos"/>
+	                		<f:selectItem itemValue="" itemLabel="Internet"/>
+	                		<f:selectItem itemValue="" itemLabel="Televisão"/>
+	                	</p:selectOneMenu>
+		               
+				        
+				        
+	            </h:panelGrid>   
+	      <p:separator/>
+	            <h:panelGrid columns="6">
+	                <p:outputLabel value="Endereço:" />
+	                <p:inputText size="70"/>
+	                <p:outputLabel value="Nª"/>
+	                <p:inputText size="6"/>
+	                <p:outputLabel value="Complemento:"/>
+	                <p:inputText size="27"/>
+                </h:panelGrid>
+        </p:tab>
+        
+        <p:tab title="Anotações sobre o cliente">
+            <h:panelGrid columns="1" cellpadding="1">
+               <p:editor/>
+            </h:panelGrid>
+        </p:tab>
+    </p:tabView>
+    </h:form>
+    
+     <h:form>
+       <p:panelGrid  style="border:0px">
+         <p:commandButton value="Salvar"/>
+         <p:commandButton value="Editar"/>
+         <p:commandButton value="Excluir"/>
+         <p:commandButton value="Novo"/>
+       </p:panelGrid>	
+    </h:form>
+    </ui:define>
+
+</ui:composition>
+

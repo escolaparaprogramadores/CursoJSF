@@ -1,0 +1,167 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+                    
+                    <p:panel styleClass="">
+                        <div class="Fs20 TexAlCenter Red">Responsive Mode</div>
+                        <div class="EmptyBox10"></div>
+                        <p:panelGrid columns="3" styleClass="Wid100">
+                            <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                            <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                            <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                            <h:outputText value="Responsive Mode" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="Responsive" styleClass="Blue" escape="false"/>
+                            <h:outputText value="Makes an element responsive using media queries. For example; &lt;br /&gt;
+                                          if screen width is smaller than 1200px and bigger than 960px, this element's width sets to '33%', &lt;br /&gt;
+                                          if screen width is smaller than 960px and bigger than 640px, this element's width sets to '50%', &lt;br /&gt;
+                                          if screen width smaller than 640px, this element's width sets to '100%'. &lt;br /&gt;
+                                          Thus, width of this element is adjusted to screen resolution on mobile phones and tablets. &lt;br /&gt;
+                                          Resize browser window to see changes of Green ContainerX boxes below." escape="false"/>
+                            
+                            <h:outputText value="" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="Responsive50" styleClass="Blue" escape="false"/>
+                            <h:outputText value="Makes an element responsive using media queries. For example; &lt;br /&gt;
+                                          if screen width is smaller than 1200px and bigger than 960px, this element's width sets to '50%',&lt;br /&gt;
+                                          if screen width is smaller than 960px, this element's width sets to '100%' &lt;br /&gt;" escape="false"/>
+                            
+                            <h:outputText value="" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="Responsive100" styleClass="Blue" escape="false"/>
+                            <h:outputText value="Makes an element responsive using media queries. For example; &lt;br /&gt;
+                                          if screen width is smaller than 1200px, this element's width sets to '100%', &lt;br /&gt;" escape="false"/>
+                        </p:panelGrid>
+                    </p:panel>
+                    <p:panel styleClass="">
+                        <div class="Container">
+                            <div class="Container33 White Responsive"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive Element (With Container33 Class)</div></div></div>
+                            <div class="Container33 White Responsive"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive Element (With Container33 Class)</div></div></div>
+                            <div class="Container33 White Responsive"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive Element (With Container33 Class)</div></div></div>
+                            <div class="EmptyBox10"></div>
+                            <div class="Container60 White Responsive50"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive50 Element (With Container60 Class)</div></div></div>
+                            <div class="Container20 White Responsive50"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive50 Element (With Container20 Class)</div></div></div>
+                            <div class="Container20 White Responsive50"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive50 Element (With Container20 Class)</div></div></div>
+                            <div class="EmptyBox10"></div>
+                            <div class="Container50 White Responsive100"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive100 Element (With Container50 Class)</div></div></div>
+                            <div class="Container20 White Responsive100"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive100 Element (With Container20 Class)</div></div></div>
+                            <div class="Container30 White Responsive100"><div class="ContainerIndent"><div class="ShadowBox GreenBack">Responsive100 Element (With Container30 Class)</div></div></div>
+                            <div class="EmptyBox50"></div>
+                        </div>
+                        <h2 class="BigTopic">Some Components In Responsive Containers</h2>
+                        <div class="EmptyBox10"></div>
+                        
+                        <div class="Container">
+                            <div class="Container50 Responsive50">
+                                <div class="ContainerIndent">
+                                    <p:dataList value="#{dataListView.cars1}" var="car" type="ordeRed">
+                                        <f:facet name="header">
+                                            DataList in <span class="black">Container50 Responsive50</span>
+                                        </f:facet>
+                                        #{car.brand}, #{car.year}
+                                    </p:dataList>
+                                </div>
+                            </div>
+                            <div class="Container50 Responsive50">
+                                <div class="ContainerIndent">
+                                    <h:form id="form2">
+                                        <p:dataList value="#{dataListView.cars3}" var="car" type="unordeRed" itemType="none" paginator="true" rows="7" styleClass="paginated">
+                                            <f:facet name="header">
+                                                DataList - Paginator in <span class="black">Container50 Responsive50</span>
+                                            </f:facet>
+                                            <p:commandLink update=":form2:carDetail" oncomplete="PF('carDialog2').show()" title="View Detail" styleClass="" style="margin-right:10px;">
+                                                <f:setPropertyActionListener value="#{car}" target="#{dataListView.selectedCar}" />
+                                                <i class="fa fa-table gray Fs18" style="margin-top:5px;"></i>
+                                            </p:commandLink>
+
+                                            <h:outputText value="#{car.brand}, #{car.year}" style="display:inline-block"/>
+                                        </p:dataList>
+
+                                        <p:dialog header="Car Info" widgetVar="carDialog2" modal="true" responsive="true" showEffect="blind" hideEffect="explode" resizable="false">
+                                            <p:outputPanel id="carDetail" style="text-align:center;">
+                                                <p:panelGrid  columns="2" rendered="#{not empty dataListView.selectedCar}" columnClasses="label,value">
+                                                    <f:facet name="header">
+                                                        <p:graphicImage name="demo/images/car/#{dataListView.selectedCar.brand}-big.gif"/> 
+                                                    </f:facet>
+
+                                                    <h:outputText value="Id:" />
+                                                    <h:outputText value="#{dataListView.selectedCar.id}" />
+
+                                                    <h:outputText value="Year" />
+                                                    <h:outputText value="#{dataListView.selectedCar.year}" />
+
+                                                    <h:outputText value="Color:" />
+                                                    <h:outputText value="#{dataListView.selectedCar.color}" style="color:#{dataListView.selectedCar.color}"/>
+
+                                                    <h:outputText value="Price" />
+                                                    <h:outputText value="\$#{dataListView.selectedCar.price}" />
+                                                </p:panelGrid>
+                                            </p:outputPanel>
+                                        </p:dialog>
+                                    </h:form>
+                                </div>
+                            </div>
+                            <div class="Container60 Responsive100">
+                                <div class="ContainerIndent">
+                                    <h:form>
+                                        <p:treeTable value="#{treeSelectionView.root1}" var="document" selectionMode="single" style="margin-top:0">
+                                            <f:facet name="header">
+                                                Single TreeTable in <span class="black">Container60 Responsive100</span>
+                                            </f:facet>
+                                            <p:column headerText="Name" sortBy="#{document.name}">
+                                                <h:outputText value="#{document.name}" />
+                                            </p:column>
+                                            <p:column headerText="Size">
+                                                <h:outputText value="#{document.size}" />
+                                            </p:column>
+                                            <p:column headerText="Type">
+                                                <h:outputText value="#{document.type}" />
+                                            </p:column>
+                                            <f:facet name="footer">TreeTable Footer</f:facet>
+                                        </p:treeTable>
+                                    </h:form>
+                                </div>
+                            </div>
+                            <div class="Container40 Responsive100">
+                                <div class="ContainerIndent">
+                                    <h:form>
+                                        <p:treeTable value="#{treeSelectionView.root2}" var="document" selectionMode="checkbox" selection="#{treeSelectionView.selectedNodes1}">
+                                            <f:facet name="header">
+                                                Checkbox TreeTable in <span class="black">Container40 Responsive100</span>
+                                            </f:facet>
+                                            <p:column headerText="Name">
+                                                <h:outputText value="#{document.name}" />
+                                            </p:column>
+                                            <p:column headerText="Size">
+                                                <h:outputText value="#{document.size}" />
+                                            </p:column>
+                                            <p:column headerText="Type">
+                                                <h:outputText value="#{document.type}" />
+                                            </p:column>
+                                        </p:treeTable>
+                                    </h:form>
+                                </div>
+                            </div>
+                        </div>
+                    </p:panel>
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

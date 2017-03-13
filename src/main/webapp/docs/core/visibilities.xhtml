@@ -1,0 +1,114 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Visibilites, Floating And Width Settings on Devices</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Visibilities According To The Platform" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="ShowOnMobile" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Only visible on screen widths smaller than 960px." escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="ShowOnDesktop" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Only visible on screen widths bigger than 960px." escape="false"/>
+
+                                    <h:outputText value="Floating According To The Platform" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="FloatNoneOnMobile" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Removes floating on screen widths smaller than 960px." escape="false"/>
+
+                                    <h:outputText value="Width Setting For The Platform" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="WidAutoOnMobile" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Switches to auto width on screen widths smaller than 640px so that element with depends on its content." escape="false"/>
+                                    
+                                    <h:outputText value="Height Setting For The Platform" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="HeiAutoOnMobile" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Switches to auto height on screen widths smaller than 640px so that element with depends on its content." escape="false"/>
+                            
+                                </p:panelGrid>
+                            </p:panel>
+                            <p:panel styleClass="">
+                                <div class="Container">
+                                    <div class="Container100">
+                                        <div class="Container70 Responsive50">
+                                            <p:inputText styleClass="Fleft Wid90 ShowOnMobile" placeholder="Only visible if screen width is smaller than 960px."/>
+                                            <div class="EmptyBox10"></div>
+                                            <p:inputText styleClass="Fleft Wid90 ShowOnDesktop" placeholder="Only visible if screen width is bigger than 960px."/>
+                                            <div class="EmptyBox10"></div>
+                                            <p:inputText styleClass="Fleft Wid90" placeholder="Cc;"/>
+                                        </div>
+                                        <div class="EmptyBox10 ShowOnMobile"></div>
+                                        <div class="Container30 Responsive50">
+                                            <p:inputTextarea rows="5" placeholder="Floating is removed if screen width is smaller than 960px" styleClass="Wid90 Fright FloatNoneOnMobile"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="EmptyBox10"></div>
+                                <div class="Separator"></div>
+                                <div class="EmptyBox10"></div>
+                                <div class="Container">
+                                    <div class="Container100">
+                                        <div class="Container40 Responsive50">
+                                            <p:inputText styleClass="Fleft Wid90" placeholder="InputField 1"/>
+                                            <div class="EmptyBox10"></div>
+                                            <p:inputText styleClass="Fleft Wid90" placeholder="InputField 2"/>
+                                            <div class="EmptyBox10"></div>
+                                            <p:inputText styleClass="Fleft Wid90" placeholder="InputField 3"/>
+                                        </div>
+                                        <div class="EmptyBox10 ShowOnMobile"></div>
+                                        <div class="Container60 Responsive50">
+                                            <p:inputTextarea rows="5" placeholder="This element is floated right and will still be floated on smaller screens causing layout issues since it does not have FloatNoneOnMobile." styleClass="Wid90 Fright"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="EmptyBox10"></div>
+                                <div class="Separator"></div>
+                                <div class="EmptyBox10"></div>
+                                
+                                <div class="Container">
+                                    <div class="Container30 OrangeBack White WidAutoOnMobile">
+                                        <div class="ContainerIndent">This element has 30% width on bigger screens and auto width on smaller screens as it uses WidAutoOnMobile.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="EmptyBox10"></div>
+                                <div class="Separator"></div>
+                                <div class="EmptyBox10"></div>
+                                
+                                <div class="Container">
+                                    <div class="Container30 RedBack White HeiAutoOnMobile" style="height:300px;">
+                                        <div class="ContainerIndent">This element has 300px height on bigger screens and auto height on smaller screens as it uses HeiAutoOnMobile.</div>
+                                    </div>
+                                </div>
+                            </p:panel>
+
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

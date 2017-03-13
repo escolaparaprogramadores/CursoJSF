@@ -1,0 +1,48 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Empty Boxes</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Empty Boxes" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="EmptyBox5 &lt;br /&gt; EmptyBox10 &lt;br /&gt; EmptyBox20 &lt;br /&gt; EmptyBox30 &lt;br /&gt; EmptyBox40 &lt;br /&gt; EmptyBox50
+                                                  &lt;br /&gt; EmptyBox60 &lt;br /&gt; EmptyBox70 &lt;br /&gt; EmptyBox80 &lt;br /&gt; EmptyBox90 &lt;br /&gt; EmptyBox100 &lt;br /&gt; EmptyBox110
+                                                  &lt;br /&gt; EmptyBox120 &lt;br /&gt; EmptyBox130 &lt;br /&gt; EmptyBox140 &lt;br /&gt; EmptyBox150" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="Vertical spacer in pixels. &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+                            <p:panel styleClass=" TexAlCenter">
+                                <div class="BordeRedBox RedBack White PadWithBorder10 Wid20 MarAuto">Content</div>
+                                <div class="EmptyBox30">this is empty box with 30px height value (EmptyBox30)</div>
+                                <div class="BordeRedBox RedBack White PadWithBorder10 Wid20 MarAuto">Content</div>
+                            </p:panel>
+
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

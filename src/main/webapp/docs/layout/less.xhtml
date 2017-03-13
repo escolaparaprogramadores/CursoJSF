@@ -1,0 +1,47 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <div class="ContainerIndent">
+                                <h1 class="TexAlCenter gray Fs30">
+                                    <span class="Red Fs30">Less Files<br/></span>
+                                </h1>
+                            </div>
+
+                            <p:panel>
+                                <p>Both adamantium-layout and theme css files can be customized usign LESS. The less files of layout are located at less folder in layout zip file and
+                                    the less files for theme are located inside the theme jar. These files are also available at the maven project provided in the layout distribution file.</p>
+                                
+                                <p>In order to compile less files, you need a command-line tool such as lessc, please refer to <a href="http://lesscss.org/">LESS documentation</a> for the setup of the compiler.
+                                    Both layout and theme less configuration have a variables file that defines the foreground color, background color, border color and font size of the elements e.g @datatable-odd-row-bgcolor for
+                                    background color of the odd numbered datatable rows.
+                                </p>
+                                
+                                <p>
+                                    After compiling the adamantium-layout.less file, replace the webapp/resources/adamantium-layout/css/adamantium-layout.css with the genereted adamantium-layout.css. Similarly for theme, theme.less file compiles as theme.css to replace the original
+                                    theme.css in jar file. Manually editing the jar file to replace theme.css is required for this case.
+                                </p>
+                            </p:panel>
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	</f:facet>
+</h:head>
+
+<h:body>
+	<p:layout fullPage="true">
+	
+	<p:layoutUnit position="north" size="85" >
+	        	<ui:include src="topo.xhtml"/>
+     </p:layoutUnit>
+        
+        	
+	<p:layoutUnit position="south" >	
+      <ui:include src="footer.xhtml" />	
+     </p:layoutUnit>
+     
+     
+	 <p:layoutUnit position="west" >	
+        	<ui:include src="layoutmenu.xhtml" />
+     </p:layoutUnit>
+
+
+	 <p:layoutUnit position="center" >
+       		<ui:insert name="corpo"> </ui:insert>
+      </p:layoutUnit>
+      
+	</p:layout>
+		
+		
+	<h:outputScript name="js/ripple-effect.js" library="adamantium-layout" />
+	<h:outputScript name="js/perfect-scrollbar.js"
+		library="adamantium-layout" />
+	<h:outputScript name="js/layout.js" library="adamantium-layout" />
+	<h:outputStylesheet name="css/core-layout.css"
+		library="adamantium-layout" />
+	<h:outputStylesheet name="css/animate.css" library="adamantium-layout" />
+	<h:outputStylesheet name="css/adamantium-font.css"
+		library="adamantium-layout" />
+	<h:outputStylesheet name="css/ripple-effect.css"
+		library="adamantium-layout" />
+	<h:outputStylesheet name="css/perfect-scrollbar.css"
+		library="adamantium-layout" />
+	<h:outputStylesheet name="css/font-awesome.css"
+		library="adamantium-layout" />
+	<h:outputStylesheet name="css/adamantium-layout.css"
+		library="adamantium-layout" />
+</h:body>
+
+</html>

@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>                            
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Font Sizes</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Font Size" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="Fs130 &lt;br /&gt; Fs100 &lt;br /&gt; Fs60 &lt;br /&gt; Fs50 &lt;br /&gt; Fs40 &lt;br /&gt; Fs30 &lt;br /&gt; Fs29 &lt;br /&gt; Fs28
+                                                  &lt;br /&gt; Fs27 &lt;br /&gt; Fs26 &lt;br /&gt; Fs25 &lt;br /&gt; Fs24 &lt;br /&gt; Fs23 &lt;br /&gt; Fs22 &lt;br /&gt; Fs21 &lt;br /&gt; Fs20
+                                                  &lt;br /&gt; Fs19 &lt;br /&gt; Fs18 &lt;br /&gt; Fs17 &lt;br /&gt; Fs16 &lt;br /&gt; Fs15 &lt;br /&gt; Fs14 &lt;br /&gt; Fs13 &lt;br /&gt; Fs14
+                                                  &lt;br /&gt; Fs13 &lt;br /&gt; Fs12 &lt;br /&gt; Fs11 &lt;br /&gt; Fs10 &lt;br /&gt; Fs9" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="Defines font size in pixels. &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+                            <p:panel styleClass=" TexAlCenter">
+                                <span class="Fs14">Font Size : 14px</span><br/>
+                                <span class="Fs18">Font Size : 18px</span><br/>
+                                <span class="Fs24">Font Size : 24px</span><br/>
+                                <span class="Fs30">Font Size : 30px</span><br/>
+                                <span class="Fs60">Font Size : 60px</span>
+                            </p:panel>
+
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

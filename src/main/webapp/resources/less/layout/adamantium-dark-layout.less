@@ -1,0 +1,101 @@
+
+/* TOPBAR --------------------------------------------------------------------------------*/
+
+/* topbar */
+.dark #layout-topbar{background-color:@dark-topbar-bg-color;}
+    .dark #menu-button{border-right:solid 1px #546E7A; }
+    .dark #menu-button:hover, .dark #menu-button.active-menu{background-color:@dark-mainmenu-toggler-bg-color-hover;}
+        .dark #menu-button span{background-color:@dark-mainmenu-toggler-icon-lines-bg-color;}
+
+    /* topbar menu */
+    .dark #topmenu-button{color:@dark-topbar-menu-toggler-color; border-left:solid 1px #546E7A;}
+    .dark #topmenu-button:hover, .dark #topmenu-button.active-menu{background-color:@dark-topbar-menu-toggler-bg-color-hover;}
+    
+            .dark #top-menu > li > a{color:@dark-topbar-menu-first-level-link-color;}
+            .dark #top-menu > li > a:hover,
+            .dark #top-menu > li > a:focus,
+            .dark #top-menu > li > a.active-menu{background-color:@dark-topbar-menu-first-level-link-bg-color-hover;}
+
+            .dark #top-menu > li ul{background-color:@dark-topbar-menu-submenu-bg-color;}
+                .dark #top-menu > li > ul li a{color:@dark-topbar-menu-second-level-link-color;}
+                .dark #top-menu > li > ul li a:hover,
+                .dark #top-menu > li > ul li a:focus,
+                .dark #top-menu > li > ul li a.active-menu{background-color:@dark-topbar-menu-second-level-link-bg-color-hover-and-active;}
+
+
+/* MENU ----------------------------------------------------------------------------------*/
+
+/*Layout Menu Cover */
+.dark #layout-menu-cover{background-color:@dark-mainmenu-cover-bg-color;}
+
+    /*Layout Default (Top) Menu */
+    .dark .layout-menu{color:@dark-mainmenu-link-color;}
+    
+    .dark .layout-menu-cover-top .layout-menu > li > a{color:@dark-mainmenu-link-color;}
+    .dark .layout-menu-cover-top .layout-menu > li > a:hover,
+    .dark .layout-menu-cover-top .layout-menu > li > a:focus,
+    .dark .layout-menu-cover-top .layout-menu > li > a.active-menu{background-color:@dark-mainmenu-first-level-link-color-hover-and-active;}
+
+    .dark .layout-menu-cover-top .layout-menu > li ul{background-color:@dark-mainmenu-submenu-bg-color;}
+
+    .dark .layout-menu-cover-top .layout-menu > li > ul{background-color:@dark-mainmenu-submenu-bg-color;}
+            .dark .layout-menu-cover-top .layout-menu > li > ul li a{color:@dark-mainmenu-submenu-all-levels-link-color;}
+            .dark .layout-menu-cover-top .layout-menu > li > ul li a:hover,
+            .dark .layout-menu-cover-top .layout-menu > li > ul li a:focus,
+            .dark .layout-menu-cover-top .layout-menu > li > ul li a.active-menu{background-color:@dark-mainmenu-submenu-all-levels-link-bg-color-hover-and-active;}
+
+    /* Main Menu Styles For Left Place */
+    .dark .layout-menu-cover-left .layout-menu > li{border-bottom: dotted 1px #546E7A;}
+        .dark .layout-menu-cover-left .layout-menu > li > a{color:@dark-mainmenu-link-color;}
+        .dark .layout-menu-cover-left .layout-menu > li > a:hover,
+        .dark .layout-menu-cover-left .layout-menu > li > a:focus,
+        .dark .layout-menu-cover-left .layout-menu > li > a.active-menu{background-color:@dark-mainmenu-first-level-link-color-hover-and-active;}
+
+    .dark .layout-menu-cover-left .layout-menu > li > ul{background-color:@dark-mainmenu-submenu-bg-color;}
+            .dark .layout-menu-cover-left .layout-menu > li > ul li a{color:@dark-mainmenu-submenu-all-levels-link-color;}
+            .dark .layout-menu-cover-left .layout-menu > li > ul li a:hover,
+            .dark .layout-menu-cover-left .layout-menu > li > ul li a:focus,
+            .dark .layout-menu-cover-left .layout-menu > li > ul li a.active-menu{background-color:@dark-mainmenu-submenu-all-levels-link-bg-color-hover-and-active;}
+        .dark .layout-menu-cover-left .menu-level-3 li a{padding-left:60px !important;}
+
+
+
+/* MEDIA QUERIES **************************************************************************************************************** */
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 640px) and (max-width: 960px){
+    
+    .dark #top-menu{background-color:@dark-topbar-menu-submenu-bg-color;}
+        .dark #top-menu > li ul.active-menu{background-color:@dark-topbar-menu-first-level-bg-color;}
+        
+    .dark .layout-menu-cover-top .layout-menu > li{border-bottom: dotted 1px #546E7A;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width:480px) and (max-width: 640px) {	
+
+	.dark #top-menu{background-color:@dark-topbar-menu-submenu-bg-color;}
+        .dark #top-menu > li ul.active-menu{background-color:@dark-topbar-menu-first-level-bg-color;}
+        
+    .dark .layout-menu-cover-top .layout-menu > li{border-bottom: dotted 1px #546E7A;}
+}
+ 
+ 
+/* Portrait phones and down */
+@media (max-width: 480px) {
+	
+	.dark #top-menu{background-color:@dark-topbar-menu-submenu-bg-color;}
+        .dark #top-menu > li ul.active-menu{background-color:@dark-topbar-menu-first-level-bg-color;}
+        
+    .dark .layout-menu-cover-top .layout-menu > li{border-bottom: dotted 1px #546E7A;}
+}
+
+/* -------------------------------------------------------------------*/
+
+/* for landscape phones and tablets */
+@media (min-height:320px) and (max-height:560px){ 
+    .dark .layout-menu-cover-top .layout-menu > li{border-bottom: dotted 1px #546E7A;}
+}
+
+
+@import "../variables/layout-variables.less";  

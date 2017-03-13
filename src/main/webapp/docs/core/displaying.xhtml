@@ -1,0 +1,57 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Displaying</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Displaying" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="DispBlock" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="Displays an element as a block element &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="DispNone" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="The element will not be displayed at all (has no effect on layout)&lt;br /&gt; &lt;br /&gt;" escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="DispTable" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="The element behaves like a table element &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="DispInlBlock" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20" escape="false"/>
+                                    <h:outputText value="DispTableCell" styleClass="Blue" escape="false"/>
+                                    <h:outputText value="Lets the element behave like a td element &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

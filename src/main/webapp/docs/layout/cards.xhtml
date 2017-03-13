@@ -1,0 +1,222 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <div class="ContainerIndent">
+                                <h1 class="TexAlCenter gray Fs30">
+                                    <span class="Red Fs30">Adamantium Layout<br/></span>
+                                </h1>
+                            </div>
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Cards For Grouping</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="CardTopic &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Add topic area to top of Card element" escape="false"/>
+
+                                    <h:outputText value="Cards" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="Card &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Cards are container styles mainly created in dashboard pages.
+                                                  See examples below. &lt;br /&gt; &lt;br /&gt;
+                                                  And more examples see other Adamantium Layout pages.." escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="CardFooter &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Add footer area to bottom of Card element" escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Container100">
+                    <div class="ContainerIndent">
+
+                        <div class="Container70 Responsive100">
+                            <div class="ContainerIndent">
+                                <div class="Card">
+                                    <h2 class="BigTopic">Cards with ShadowEffect And Some Background Colors</h2>
+                                    <div class="Wid100 MarAuto">
+                                        <div class="ContainerIndent">
+                                            <div class="Container100 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card BoldGray TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-umbrella Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 BoldGray DispBlock ClearBoth">Normal Card (Without Back Color)</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container50 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card RedBack SoftRed TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-feather Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftRed DispBlock ClearBoth">RedBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container25 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card OrangeBack SoftOrange TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-cloud Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftOrange DispBlock ClearBoth">OrangeBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container25 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card GrayBack SoftGray TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-washingmachine Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftGray DispBlock ClearBoth">GrayBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container33 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card LeadenGreenBack SoftGray TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-moon Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftGray DispBlock ClearBoth">LeadenGreenBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container33 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card YellowBack White TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-gallery Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 White DispBlock ClearBoth">YellowBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container33 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card GreenBack SoftGreen TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-cloud Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftGreen DispBlock ClearBoth">GreenBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container100 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card PurpleBack SoftPurple TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-cloud-download Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 SoftPurple DispBlock ClearBoth">PurpleBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container50 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card WhiteBlueBack Gray TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-cloud-upload Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 Gray DispBlock ClearBoth">WhiteBlueBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Container50 Responsive">
+                                                <div class="ContainerIndent">
+                                                    <div class="Card BlueBack White TexAlCenter HoverEffect">
+                                                        <div class="EmptyBox5"></div>
+                                                        <i class="icon-sun Fs50"></i>
+                                                        <div class="EmptyBox5"></div>
+                                                        <div class="FontRobotoLight Fs14 White DispBlock ClearBoth">BlueBack Card</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Container30 Responsive100">
+                            <div class="Container100 Responsive50">
+                                <div class="ContainerIndent">
+                                    <div class="Card HeiAutoOnMobile OvHidden">
+                                        <div class="CardTopic">Card Topic</div>
+                                        <div class="Separator"></div>
+                                        <span class="Gray FontRobotoLight Fs20">All Earnings</span><br/>
+                                        <span class="Orange Fs30 FontRobotoBold">$ 30,200</span>
+                                        <div class="CardFooter">Card Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Container100 Responsive50">
+                                <div class="ContainerIndent">
+                                    <div class="Card HeiAutoOnMobile OvHidden">
+                                        <div class="CardTopic">Card Topic</div>
+                                        <div class="Separator"></div>
+                                        <span class="Gray FontRobotoLight Fs20">Page Views</span><br/>
+                                        <span class="Green Fs30 FontRobotoBold">320 K+</span>
+                                        <div class="CardFooter">Card Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Container100 Responsive50">
+                                <div class="ContainerIndent">
+                                    <div class="Card HeiAutoOnMobile OvHidden">
+                                        <div class="CardTopic">Card Topic</div>
+                                        <div class="Separator"></div>
+                                        <span class="Gray FontRobotoLight Fs20">Tasks Status</span><br/>
+                                        <span class="Red Fs30 FontRobotoBold">27 / 114</span>
+                                        <div class="CardFooter">Card Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Container100 Responsive50">
+                                <div class="ContainerIndent">
+                                    <div class="Card HeiAutoOnMobile OvHidden">
+                                        <div class="CardTopic">Card Topic</div>
+                                        <div class="Separator"></div>
+                                        <span class="Gray FontRobotoLight Fs18">Total Downloads</span><br/>
+                                        <span class="Purple Fs30 FontRobotoBold">1,351 K+</span>
+                                        <div class="CardFooter">Card Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

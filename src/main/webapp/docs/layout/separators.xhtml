@@ -1,0 +1,115 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <div class="ContainerIndent">
+                                <h1 class="TexAlCenter gray Fs30">
+                                    <span class="Red Fs30">Adamantium Layout<br/></span>
+                                </h1>
+                            </div>      
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Separators</div>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Separators" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="Separator &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Adds a line between container. Default separator color is gray ( hex code: #E0E0E0 ) &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+
+                                    <h:outputText value="Separators" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="SeparatorFull &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Separator exclusive for cards that spans full horizontal space. Default separator color is gray ( hex code: #E0E0E0 )
+                                                  See the example below. &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+                            <p:panel styleClass="">
+                                <div class="Container">
+                                    <div class="Container50 Responsive100">
+                                        <div class="Container100 Responsive50">
+                                            <div class="ContainerIndent">
+                                                <div class="Card HeiAutoOnMobile">
+                                                    <h2 class="CardTopic"><i class="icon-mountains14 Fs20 Fleft MarRight10"></i> Full Separator Example On Card
+                                                    </h2>
+                                                    <div class="SeparatorFull"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Full Separator <br/><span class="Gray Fs14">Element having this class is especially used for cards . Elements that have this class left and right minus 10 pixel negative margin , 
+                                                                taking rests on the border of the card. Thus the card is divided into two longitudinal parts.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="SeparatorFull"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Full Separator <br/> <span class="Gray Fs14">Element having this class is especially used for cards . Elements that have this class left and right minus 10 pixel negative margin , 
+                                                                taking rests on the border of the card. Thus the card is divided into two longitudinal parts.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="SeparatorFull"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Full Separator <br/> <span class="Gray Fs14">Element having this class is especially used for cards . Elements that have this class left and right minus 10 pixel negative margin , 
+                                                                taking rests on the border of the card. Thus the card is divided into two longitudinal parts.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Container50 Responsive100">
+                                        <div class="Container100 Responsive50">
+                                            <div class="ContainerIndent">
+                                                <div class="Card HeiAutoOnMobile">
+                                                    <h2 class="CardTopic"><i class="icon-mountains14 Fs20 Fleft MarRight10"></i> Normal Separator Example On Card
+                                                    </h2>
+                                                    <div class="Separator"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Normal Separator <br/><span class="Gray Fs14">This class assumes the task separator between the two elements.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Separator"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Normal Separator <br/> <span class="Gray Fs14">This class assumes the task separator between the two elements.</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Separator"></div>
+                                                    <div class="Wid100">
+                                                        <div class="ContainerIndent Fs16 BoldGray">
+                                                            # Normal Separator <br/> <span class="Gray Fs14">This class assumes the task separator between the two elements.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p:panel>
+
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

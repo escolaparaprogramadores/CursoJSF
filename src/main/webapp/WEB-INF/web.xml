@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+ 	<!-- Refere-se ao nome da aplicação -->
+	<display-name>Sistema Gerenciador de Cursos On-line</display-name>
+	
+	
+	<!-- Arquivo que será carregado quando você executar o projeto -->
+	<welcome-file-list>
+			<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
+	
+	
+	<!-- Estágio do Projeto - "Development" ou "Production" -->
+	<context-param>
+	        <param-name>javax.faces.PROJECT_STAGE</param-name>
+	        <param-value>Development</param-value>
+    </context-param>
+    
+    
+    <!-- Tema do PrimeFaces -->
+    <!-- "afterdark", "afternoon", "afterwork", "aristo", "black-tie", "blitzer", 
+    "bluesky", "casablanca", "cruze", "cupertino", "dark-hive", "dot-luv", "eggplant",
+    "excite-bike", "flick", "glass-x", "home", "hot-sneaks", "humanity", "le-frog",
+    "midnight", "mint-choc", "overcast", "pepper-grinder", "redmond", "rocket", "sam",
+    "smoothness", "south-street", "start", "sunny", "swanky-purse", "trontastic", 
+    "twitter bootstrap", "ui-darkness", "ui-lightness", "vader" -->
+	<context-param>
+			<param-name>primefaces.THEME</param-name>
+			<param-value>adamantium</param-value>
+	</context-param>
+  
+  
+    <!-- Configuração do JSF -->
+    <!--  Nesta parte da configuração nós dissemos para o JSF que todo arquivo que tenha a extensão “.xhtml” deve passar pelo Faces Servlet.
+        O Servlet que filtra as requisições feitas pelo cliente.-->
+    <servlet>
+	        <servlet-name>Faces Servlet</servlet-name>
+	        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+	        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    
+    <!-- Tipo de arquivo que será filtrado pelo Faces Servlet. -->
+    <servlet-mapping>
+	        <servlet-name>Faces Servlet</servlet-name>
+	        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    
+    
+    <mime-mapping>
+	        <extension>woff2</extension>
+	        <mime-type>application/font-woff2</mime-type>
+    </mime-mapping> 
+</web-app>

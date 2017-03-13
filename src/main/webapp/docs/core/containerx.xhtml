@@ -1,0 +1,80 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Adamantium Documentation</h1>
+                            <div class="EmptyBox40"></div>                       
+                            
+                            <p:panel styleClass="">
+                        <div class="Fs20 TexAlCenter Red">ContainerX</div>
+                        <div class="EmptyBox10"></div>
+                        <p:panelGrid columns="3" styleClass="Wid100">
+                            <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                            <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                            <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                            <h:outputText value="Containers (For Responsive Layout)" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="Container100 &lt;br /&gt; Container96 &lt;br /&gt; Container90 &lt;br /&gt; Container85 &lt;br /&gt; Container80  &lt;br /&gt; Container75
+                                           &lt;br /&gt; Container70 &lt;br /&gt; Container66  &lt;br /&gt; Container60  &lt;br /&gt; Container50  &lt;br /&gt; Container40  &lt;br /&gt; Container33 &lt;br /&gt; Container30
+                                            &lt;br /&gt; Container25 &lt;br /&gt; Container20 &lt;br /&gt; Container10 &lt;br /&gt; Container5" styleClass="Blue" escape="false"/>
+                            <h:outputText value="ContinerX is the essential part of grid layout where the number x defines the width of the cell. In order to make a ContainerX
+                                          responsive, one of the Responsive style classes described in previous section should be added. In addition, since they float, a class called
+                                          Container should be the parent to clear the floats.
+                                          Resize browser window to see changes of different colored boxes below. &lt;br /&gt; &lt;br /&gt;" escape="false"/>
+                            
+                            <h:outputText value="Indent" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="ContainerIndent" styleClass="Blue" escape="false"/>
+                            <h:outputText value="ContainerIndent is optional and added inside a ContainerX class to apply formatting such as padding." escape="false"/>
+                            
+                            <h:outputText value="Container" styleClass="Fs20" escape="false"/>
+                            <h:outputText value="Wrapper" styleClass="Blue" escape="false"/>
+                            <h:outputText value="Container is used as the wrapper of ContainerX elements to clear the floats." escape="false"/>
+                        
+                        </p:panelGrid>
+                    </p:panel>
+                    <p:panel styleClass=" TexAlCenter">
+                        <div class="Container">
+                            <div class="Fleft RedBack White Container20 MarAuto Responsive"> <br/>Container20 - Responsive<br/><br/> </div>
+                            <div class="Fleft BlueBack White Container30 MarAuto Responsive"> <br/>Container30 - Responsive<br/><br/> </div>
+                            <div class="Fleft OrangeBack White Container50 MarAuto Responsive"> <br/>Container50 - Responsive<br/><br/> </div>
+                            <div class="EmptyBox10"></div>
+                            <div class="Fleft PurpleBack White Container33 MarAuto Responsive50"> <br/>Container33 - Responsive50<br/><br/> </div>
+                            <div class="Fleft PinkBack White Container66 MarAuto Responsive50"> <br/>Container66 - Responsive50<br/><br/> </div>
+                            <div class="EmptyBox10"></div>
+                            <div class="Fleft PurpleBack White Container33 MarAuto Responsive"> <br/>Container33 - Responsive<br/><br/> </div>
+                            <div class="Fleft PinkBack White Container33 MarAuto Responsive"> <br/>Container33 - Responsive<br/><br/> </div>
+                            <div class="Fleft GreenBack White Container33 MarAuto Responsive"> <br/>Container33 - Responsive<br/><br/> </div>
+                            <div class="EmptyBox10"></div>
+
+                            <div class="Fleft White RedBack Container40 MarAuto Responsive">
+                                Container40
+                                <div class="ContainerIndent SoftBlueBack">
+                                    Container Indent
+                                    <div class="Card Fs20">
+                                        Card In Container Block
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p:panel>
+                            
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>
